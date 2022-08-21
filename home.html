@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Functional Baper Bank</title>
+  </head>
+  <body>
+    <div class="conntainer bg-red-300 h-3/4 m-10 pb-8">
+      <div class="heading py-8">
+        <h1 class="text-6xl text-center">Let's get some money!!</h1>
+      </div>
+      <div class="layout mt-5 grid grid-cols-3 gap-4 justify-items-center">
+        <div class="div1 bg-lime-400 py-3 px-10 rounded text-center w-3/4">
+          <h2>Deposit</h2>
+          <span class="text-4xl">$ </span>
+          <span id="deposit" class="text-4xl">00</span>
+        </div>
+        <div class="div2 bg-emerald-400 py-3 px-10 rounded text-center w-3/4">
+          <h2>Withdrawen</h2>
+          <span class="text-4xl">$ </span>
+          <span id="withdrawen" class="text-4xl">00</span>
+        </div>
+        <div class="div3 bg-blue-500 py-3 px-10 rounded text-center w-3/4">
+          <h2>Balance</h2>
+          <span class="text-4xl">$ </span>
+          <span id="balance" class="text-4xl">00</span>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------Last two -->
+
+      <div class="grid grid-cols-2 justify-items-center mt-20">
+        <div class="div4 rounded bg-indigo-400 py-10 px-10 w-9/12">
+          <h2 class="text-2xl">Please Deposit</h2>
+          <input
+            id="dai"
+            class="py-1 pl-2 my-3 w-9/12"
+            type="text"
+            placeholder="$ Amount u want to deposit "
+          />
+          <br />
+          <button
+            id="dbtn"
+            class="rounded text-center px-5 py-2 mt-3 bg-green-400"
+          >
+            Deposit
+          </button>
+        </div>
+        <div class="div5 bg-violet-400 py-10 px-10 w-9/12 rounded">
+          <h2 class="text-2xl">PLease Withdraw</h2>
+          <input
+            id="daw"
+            class="py-1 pl-2 my-3 w-9/12"
+            type="text"
+            placeholder="$ Amount u want to withdraw "
+          />
+          <br />
+          <button
+            id="wbtn"
+            class="rounded text-center px-5 py-2 mt-3 bg-emerald-400"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/utilities.js"></script>
+    <!-- <script src="js/login.js"></script> -->
+    <script src="js/calc.js"></script>
+  </body>
+</html>
